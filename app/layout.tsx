@@ -27,6 +27,13 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+        <nav className="w-full flex items-center justify-between px-8 py-4 border-b border-gray-200 dark:border-zinc-800 bg-white dark:bg-black sticky top-0 z-30">
+          <a href="/" className="text-2xl font-bold bg-gradient-to-r from-blue-500 to-purple-600 bg-clip-text text-transparent">Nexa-Commerce</a>
+          <div className="flex gap-6 text-lg">
+            <a href="/" className="hover:text-blue-600 transition">Home</a>
+            <a href="#themes" className="hover:text-blue-600 transition">Themes</a>
+          </div>
+        </nav>
         {children}
       </body>
     </html>
